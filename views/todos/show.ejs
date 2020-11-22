@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +8,10 @@
     <title>Express To-DO</title>
 </head>
 <body>
-    <h1>Todos</h1>
-    <ul>
-      <% todos.forEach(function(t, idx) { %>
-        <li>
-          
-            <a href="/todos/<%= idx %>"><%= t.todo %></a>
-            - 
-          <%= t.done ? 'done' : 'not done' %>
-        </li>
-      <% }); %>
-    </ul>
+    <body>
+        <h1>Todo #<%= todoNum %></h1>
+        <h3><%= todo.todo %></h3>
+        <h3>Complete: <%= todo.done ? 'Yes' : 'No' %></h3>
+      </body>
 </body>
 </html>
